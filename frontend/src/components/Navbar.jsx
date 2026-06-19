@@ -25,7 +25,7 @@ export default function Navbar() {
     >
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-[78px]">
         <Link to="/" data-testid="navbar-logo" className="flex items-center group">
-          <img src={BRAND.logo} alt="MAVLON" className="h-[90px] w-auto object-contain" />
+          <img src={BRAND.logo} alt="MAVLON" className="h-[75px] w-auto object-contain" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-10">
