@@ -25,14 +25,8 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-[78px]">
-        <Link to="/" data-testid="navbar-logo" className="flex items-center gap-3 group">
-          <img src={BRAND.logo} alt="MAVLON" className="h-10 w-10 object-contain" />
-          <div className="leading-none">
-            <div className="font-display text-xl tracking-[0.25em] text-[#F5F5F5] group-hover:text-[#C9A961] transition-colors">
-              MAVLON
-            </div>
-            <div className="text-[9px] tracking-[0.4em] text-[#A1A1AA] mt-1">KITCHEN SINK</div>
-          </div>
+        <Link to="/" data-testid="navbar-logo" className="flex items-center group">
+          <img src={BRAND.logo} alt="MAVLON" className="h-[50px] w-auto object-contain" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-10">
