@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12">
         <div className="md:col-span-5">
           <div className="flex items-center mb-6">
-            <img src={BRAND.logo} alt="MAVLON" className="h-[60px] w-auto object-contain" />
+            <img src={BRAND.logo} alt="MAVLON" className="h-[85px] w-auto object-contain" />
           </div>
           <p className="text-[#A1A1AA] text-sm leading-relaxed max-w-md">
             Crafted for the modern kitchen. Premium quartz sinks engineered with uncompromising
