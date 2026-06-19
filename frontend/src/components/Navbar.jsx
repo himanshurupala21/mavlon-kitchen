@@ -20,13 +20,12 @@ export default function Navbar() {
   return (
     <header
       data-testid="navbar"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-[#0A0A0A]/85 backdrop-blur-xl border-b border-white/5" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-[#0A0A0A]/85 backdrop-blur-xl border-b border-white/5" : "bg-transparent"
+        }`}
     >
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-[78px]">
         <Link to="/" data-testid="navbar-logo" className="flex items-center group">
-          <img src={BRAND.logo} alt="MAVLON" className="h-[68px] w-auto object-contain" />
+          <img src={BRAND.logo} alt="MAVLON" className="h-[90px] w-auto object-contain" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-10">
@@ -36,10 +35,9 @@ export default function Navbar() {
               <Link
                 key={l.path}
                 to={l.path}
-                data-testid={`nav-link-${l.label.toLowerCase().replace(/\s+/g,'-')}`}
-                className={`luxe-link text-[11px] uppercase tracking-[0.3em] transition-colors ${
-                  active ? "text-[#C9A961]" : "text-[#F5F5F5] hover:text-[#C9A961]"
-                }`}
+                data-testid={`nav-link-${l.label.toLowerCase().replace(/\s+/g, '-')}`}
+                className={`luxe-link text-[11px] uppercase tracking-[0.3em] transition-colors ${active ? "text-[#C9A961]" : "text-[#F5F5F5] hover:text-[#C9A961]"
+                  }`}
               >
                 {l.label}
               </Link>
@@ -79,7 +77,7 @@ export default function Navbar() {
                 <Link
                   key={l.path}
                   to={l.path}
-                  data-testid={`mobile-nav-link-${l.label.toLowerCase().replace(/\s+/g,'-')}`}
+                  data-testid={`mobile-nav-link-${l.label.toLowerCase().replace(/\s+/g, '-')}`}
                   className="text-[#F5F5F5] text-sm uppercase tracking-[0.3em] hover:text-[#C9A961]"
                 >
                   {l.label}
